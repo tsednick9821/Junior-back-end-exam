@@ -46,14 +46,21 @@
         <br><br>
         <!-- PHP -->
         <?php
-        function JSONParse(){
-            $json = $_POST['JsonString'];
-            // Decode JSON data to PHP array 
-            var_dump(json_decode($json, true));
+        class JsonDecoder {
+  
+  
+          public function jsonToArray($jsonObj){
+              $convertedArray = json_decode($jsonObj, true);
+              return $convertedArray;
+          }
+          
         }
 
         if(array_key_exists('parse',$_POST)){
-            JSONParse();
+          $decoder = new JsonDecoder();
+          $jsonObj = $_POST['JsonString'];
+          $convertedJSON = $decoder->jsonToArray($jsonObj);
+          print_r($convertedJSON);
         }
          
         ?>
