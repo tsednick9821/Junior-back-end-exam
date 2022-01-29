@@ -33,10 +33,9 @@
 <div class="w3-container">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">TASK 2 Answer</span></h5>
-    <p>In the class example, the <b>class ProductInformation</b> is wrong because it is already used in namespace.<br>
-    Both <b>use</b> keywords are used wrong, the <b>use</b> keyword is only used when there are two classes with the same name to identify them.
-    <br>It should be used as <b>use Magento\Catalog\Model\ProductRepository <i>as ProductRepositoryAlias</i>;</b></p>
-
+    <p>In the class example, the <b>namespace ProductInformation</b> is wrong because it is already used in class.<br>
+    In <i>Line 56</i> <b>productSkus</b> is used but there's only <b>productSku</b> defined
+    </p>
   </div>
 </div>
 

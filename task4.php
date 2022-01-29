@@ -34,7 +34,10 @@
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">TASK 4 Answer</span></h5>
     <p>
-      SELECT b.book_name, a.first_name, a.last_name, b.publish_date FROM 'books' AS b INNER JOIN 'authors' AS a ON b.author_id = a.id;
+      SELECT b.book_name, a.first_name, a.last_name, b.publish_date FROM 'books' AS b INNER JOIN 'authors' AS a ON b.author_id = a.id 
+      WHERE month(b.publish_date)=1 AND year(b.publish_date)=2021
+      ORDER BY b.publish_date DESC
+      LIMIT 1;
     </p>
 
   </div>
