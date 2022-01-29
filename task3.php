@@ -39,7 +39,7 @@
     </header>
 
     <div class="w3-container">
-      <p>Lorem ipsum...</p>
+      <p>"SELECT * FROM 'news' WHERE id='».$_GET['x']."' OR 1=1"</p>
     </div>
     </div><br>
     <div class="w3-card-4">
