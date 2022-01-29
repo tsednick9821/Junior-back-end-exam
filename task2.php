@@ -12,7 +12,7 @@
 <div class="w3-top">
   <div class="w3-row w3-padding w3-black">
     <div class="w3-col s3">
-      <a href="index.php" class="w3-button w3-block w3-black">TASK 1</a>
+      <a href="task1.php" class="w3-button w3-block w3-black">TASK 1</a>
     </div>
     <div class="w3-col s3">
       <a href="task2.php" class="w3-button w3-block w3-black">TASK 2</a>
