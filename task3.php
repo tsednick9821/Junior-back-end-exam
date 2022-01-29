@@ -62,8 +62,8 @@
           if($res && mysql_num_rows($res)>0)
           {
             while($row = mysql_fetch_assoc($rec)){
-            echo $row['anons'];
-            echo $row['text'];
+            echo $row['short_description'];
+            echo $row['article'];
             }
           }
           else
