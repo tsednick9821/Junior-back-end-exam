@@ -48,7 +48,16 @@
     </header>
 
     <div class="w3-container">
-      <p>Lorem ipsum...</p>
+      <p>
+        <pre>
+          $id = $mysqli -> real_escape_string($_GET['x']);
+          $query = sprintf("SELECT short_description, article
+                  FROM 'news' WHERE id='%s'",
+              $mysqli->real_escape_string($id);
+          $res = $mysqli->query($query);
+          printf($result->num_rows);
+        </pre>
+      </p>
     </div>
     </div><br>
     <div class="w3-card-4">
